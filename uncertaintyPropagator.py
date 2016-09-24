@@ -22,7 +22,6 @@ Outputs:
 
 # TODO take imputs and assign them to sympy variables y, x1, dx1, ...
 
-# y = sympify(sys.argv[1])
 eq = sympify('R2*Vin/(R1 + R2)')
 x = sympy.symbols('R1')
 y = sympy.symbols('R2')
@@ -52,21 +51,3 @@ dB = (xEntry + yEntry + zEntry)**0.5
 print('uncer', dB)
 
 print('tscore', tscore(2.546, B, 0, dB))
-# for var in sys.argv[2:]:
-#     var = sympy.symbols(var)
-
-# def errorContibution(x, dx, y):
-#     # TODO how each variable contributes to error of y
-#     pass
-#
-# def yError(y):
-#     sumContributions = 0
-#     # TODO loop through variables and
-#     pass
-#
-# # TODO process variables in formula and return output
-#
-# eq = sympify('(x/y)-z', locals={'x': 10, 'z': 5})
-# print(eq)
-# solution = sympy.solve(eq, dict=True)
-# print(solution)
